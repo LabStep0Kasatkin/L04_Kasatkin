@@ -35,7 +35,7 @@ async def send_help(message: types.Message):
 async def echo(message: types.Message):
     await message.answer(f"Вы сказали: {message.text}")
 
-# Основная функция запуска
+
 async def main():
     await set_commands(bot)
     dp.include_router(start_router)
